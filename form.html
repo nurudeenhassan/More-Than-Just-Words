@@ -1,55 +1,93 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Client Information Form</title>
-  <link rel="stylesheet" href="form.css">
-</head>
-<body>
-  <form action="https://formsubmit.co/el/tokunu" method="POST">
-    <div class="form-row">
-      <label for="clientName">Client Name:</label>
-      <input type="text" id="clientName" name="clientName" required>
-    </div>
-    <div class="form-row">
-      <label for="dob">Date of Birth:</label>
-      <input type="date" id="dob" name="dob" required>
-    </div>
-    <div class="form-row">
-      <label for="placeOfResidence">Place 
- of Residence:</label>
-      <input type="text" id="placeOfResidence" name="placeOfResidence" required>
-    </div>
-    <div class="form-row">
-      <label for="sex">Sex:</label>
-      <select id="sex" name="sex" required>
-        <option value="male">Male</option>
-        <option value="female">Female</option>
-        <option value="other">Other</option> 
+  <head>
+    <title>INTAKE FORM</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
 
-      </select>
-    </div>
-    <div class="form-row"> 
-
-      <label for="diagnosis">Diagnosis:</label>
-      <textarea id="diagnosis" name="diagnosis" required></textarea>
-    </div>
-    <div class="form-row">
-      <label for="guardian">Guardian:</label>
-      <textarea id="guardian" name="guardian"></textarea>
-    </div>
-    <div class="form-row">
-      <label for="phoneNumber">Phone Number:</label>
-      <input type="tel" id="phoneNumber" name="phoneNumber" required>
-    </div>
-    <div class="form-row">
-      <label for="email">Email
- Address:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-    <div class="form-row"> 
-        <button type="submit">Submit</button>
+  <body>
+    <header>
+      <h1>INTAKE FORM</h1>
+      <p>
+        There is a complimentary 15-minute telephone or vidoe call that provides
+        an opportunity to ask questions and ensure that I am the right fit for
+        your family.
+      </p>
+    </header>
+    <form
+      class="form-grid"
+      action="https://formspree.io/f/xdknzzwb"
+      method="POST"
+    >
+      <div class="form-group">
+        <label for="clientName">Client Name & Surname</label>
+        <input type="text" id="clientName" name="clientName" required />
       </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </div>
+      <div class="form-group">
+        <label for="placeOfResidence">Place of Residence:</label>
+        <input
+          type="text"
+          id="placeOfResidence"
+          name="placeOfResidence"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="sex">Sex:</label>
+        <select id="sex" name="sex" required>
+          <option value=""></option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+          <option value="I choose not to Identify">
+            I choose not to Identify
+          </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="diagnosis">Diagnosis:</label>
+        <textarea id="diagnosis" name="diagnosis" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="guardian">Guardian:</label>
+        <textarea id="guardian" name="guardian" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+      <h4>Background Information of speech and language Difficulties</h4>
+      <div class="form-group">
+        <label for="language">Primary Language Spoken in the Home:</label>
+        <input type="text" id="language" name="language" required />
+      </div>
+      <div class="form-group">
+        <label for="language-problems">Describe the speech and language problems you notice with your child(ex. not talking, using only a few words, saying words incorrectly)</label>
+        <textarea id="language-problems" name="language-problems" required></textarea>
+      </div>
+      <div class="form-group"><legend>Is your child aware of their speech and/or language difficulties?</legend>
+        <label for="Affirm-Yes"><input id="Affirm-Yes" type="radio" name="difficulties-awareness" class="inline" checked /> Yes</label>
+        <label for="Affirm-No"><input id="Affirm-No" type="radio" name="difficulties-awareness" class="inline" /> NO</label></div>
+        <div class="form-group">
+          <label for="If-yes-explain">If yes, explain:</label>
+          <textarea id="If-yes-explain" name="If-yes-explain" ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="more-optional-complain">What else would you like to share with me about your child's development (i.e your goal for your child, and any other information you think would be helpful in supporting you and your child)?</label>
+          <textarea id="more-optional-complain" name="more-optional-complain"></textarea>
+        </div>
+      <button type="submit">Submit</button>
+    </div>
+      
     </form>
-   
-</body>
+  </body>
 </html>
